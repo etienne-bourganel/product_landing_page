@@ -2,13 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles.css">
+    <link 
+      rel="stylesheet" 
+      href="./styles.css"
+    />
     <title>Product Landing Page</title>
   </head>
+
   <body>
     <header id="header">
-      <img id="header-img" src="https://static.thenounproject.com/png/32679-200.png" alt="Longboard Skate">
-      <h2>Nordic Wheels</h2>
+      <img 
+        id="header-img" 
+        src="https://static.thenounproject.com/png/32679-200.png" 
+        alt="Longboard Skate"
+        />
+
+      <h2>Nordic <br> Wheels</h2>
+      
       <nav id="nav-bar">
         <ul>
           <li class="nav-link"><a href="#features">Features</a></li>
@@ -16,19 +26,36 @@
           <li class="nav-link"><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
-
-      <div id=" video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mXqmRAUsn9U" alt="Nice footage of people longboarding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id= "vid-caption">
-        <i>A beautiful video made by Original Skateboards</i>
-      </div>
-      <br>
-
-      <form id="form" action=""label="Your email">Please enter your email adress:
-        <input type="email" id="email" name="email" required placeholder="first.last@mail.com"><br>
-      </form>
-
     </header>
+
+    <form 
+      id="form" 
+      action=""
+      label="Your email">
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required placeholder="Enter your email adress"
+        />
+
+        <br>
+
+      <input 
+        type="submit" 
+        id="submit" 
+        value="Send me more info! 😊"
+        action="https://www.freecodecamp.com/email-submit"
+        />
+    </form>
+
+    <div id=" video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mXqmRAUsn9U" alt="Nice footage of people longboarding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id= "vid-caption">
+      <i>Video made by Original Skateboards</i>
+    </div>
+    <br>
+
   </body>
 </html>
