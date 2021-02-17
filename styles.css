@@ -1,3 +1,10 @@
+@media (max-width: 400px) {
+ header, .header, .nav-link {
+   display: flex;
+   flex-direction: column;
+ }
+}
+
 body {
   margin: 0;
 }
@@ -5,16 +12,10 @@ body {
 header {
   min-height: 100%;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 
   background-repeat:no-repeat;
-  background: -webkit-linear-gradient( to left top, blue, red);
-  background: -moz-linear-gradient( to left top, blue, red);
-  background: -ms-linear-gradient( to left top, blue, red);
-  background: -o-linear-gradient( to left top, blue, red);
-  background: linear-gradient( to left top, blue, red);
+  background: linear-gradient( to left top, #00a1ff, #e400ff);
 
   width: 100%;
   margin: 0;
