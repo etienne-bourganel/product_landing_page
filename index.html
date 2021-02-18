@@ -32,34 +32,39 @@
       </nav>
     </header>
 
-    <form 
-      id="form" 
-      action=""
-      label="Your email">
-      <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        required placeholder="Enter your email adress"
-        />
+    <div id="main-container">
+      
+      <form 
+        id="form"
+        class="main-elmt"
+        action=""
+        label="Your email">
+        <input 
+          type="email"
+          id="email"
+          class="main-elmt"
+          name="email" 
+          required placeholder="Enter your email adress"
+          />
+        <input 
+          type="submit" 
+          id="submit"
+          class="main-elmt"
+          value="Send me more info! 😊"
+          action="https://www.freecodecamp.com/email-submit"
+          />
+      </form>
 
-        <br>
-
-      <input 
-        type="submit" 
-        id="submit" 
-        value="Send me more info! 😊"
-        action="https://www.freecodecamp.com/email-submit"
-        />
-    </form>
-
-    <div id=" video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mXqmRAUsn9U" alt="Nice footage of people longboarding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="video-block" class="main-elmt">
+        <div id=" video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mXqmRAUsn9U" alt="Nice footage of people longboarding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id= "vid-caption">
+          <i>Video made by Original Skateboards</i>
+        </div>
     </div>
-    <div id= "vid-caption">
-      <i>Video made by Original Skateboards</i>
+
     </div>
-    <br>
 
   </body>
 </html>
