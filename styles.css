@@ -24,11 +24,28 @@ header {
   display: inline-block;
 }
 
+#separator {
+  margin: 0;
+  margin-top: 20px;
+  height: 5px;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  background-repeat:no-repeat;
+  background: linear-gradient( to left top, #00a1ff, #e400ff);
+
+  width: 100%;
+
+  padding: 0;
+
+}
+
 h2 {
- display: inline-block;
- vertical-align: middle;
- margin-left: -50px;
- font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -50px;
+  font-size: xx-large;
 }
 
 .nav-link {
@@ -56,8 +73,10 @@ nav {
 }
 
 nav > ul > li > a {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
   color: white;
+  margin: 30px;
 }
 
 #main-container {
@@ -101,4 +120,9 @@ form > input {
  .board {
   height: 30vw;
   width: auto;
+ }
+
+ .board-caption {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
  }
