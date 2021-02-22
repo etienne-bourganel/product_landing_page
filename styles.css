@@ -10,18 +10,11 @@ body {
 }
 
 header {
-  min-height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-
   background-repeat:no-repeat;
   background: linear-gradient( to left top, #00a1ff, #e400ff);
-
   width: 100%;
-  margin: 0;
-  padding: 0;
-
-  display: inline-block;
+  position: fixed; 
+  top: 0;
 }
 
 #separator {
@@ -35,7 +28,6 @@ header {
   background: linear-gradient( to left top, #00a1ff, #e400ff);
 
   width: 100%;
-
   padding: 0;
 
 }
@@ -55,8 +47,6 @@ h2 {
 nav {
   margin: 0;
   padding: 0;
-
-  display: inline-block;
   position: fixed; 
   top: 0; 
   right: 0; 
@@ -64,9 +54,7 @@ nav {
 }
 
 #header-img {
-  width: 160px;
   height: auto;
-
   display: inline-block;
   vertical-align: middle;
   margin-left: -30px;
@@ -80,8 +68,10 @@ nav > ul > li > a {
 }
 
 #main-container {
+  margin-top: 200px;
   padding: 20px 50px 50px 50px;
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-elmt {
@@ -105,14 +95,14 @@ form > input {
   flex-direction: column;
 }
 
- #boards-block {
+ #boards-block, #features-block, #contact-block {
    margin-top: 30px ;
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
  }
 
-.board-container {
+.board-container, .features-container, .contact-container {
   display: flex;
   flex-direction: column;
 }
@@ -122,7 +112,17 @@ form > input {
   width: auto;
  }
 
- .board-caption {
+ .feature {
+   height: 15vw;
+   width: auto;
+ }
+
+ .contact {
+  height: 15vw;
+  width: auto;
+ }
+
+ .caption {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
  }
