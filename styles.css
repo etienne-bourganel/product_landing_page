@@ -12,8 +12,9 @@ body {
 header {
   background-repeat:no-repeat;
   background: linear-gradient( to left top, #00a1ff, #e400ff);
+  opacity: 0.8;
   width: 100%;
-  position: fixed; 
+  position: fixed;
   top: 0;
 }
 
@@ -47,9 +48,9 @@ h2 {
 nav {
   margin: 0;
   padding: 0;
-  position: fixed; 
-  top: 0; 
-  right: 0; 
+  position: fixed;
+  top: 0;
+  right: 0;
   border: 0;
 }
 
@@ -102,9 +103,13 @@ form > input {
    justify-content: space-evenly;
  }
 
-.board-container, .features-container, .contact-container {
+.board-container, .features-container, .contact-container  {
   display: flex;
   flex-direction: column;
+}
+
+.contact-container {
+  align-items: center;
 }
 
  .board {
@@ -118,7 +123,7 @@ form > input {
  }
 
  .contact {
-  height: 15vw;
+  height: 10vw;
   width: auto;
  }
 
